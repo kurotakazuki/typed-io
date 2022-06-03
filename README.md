@@ -1,4 +1,8 @@
 # Typed I/O
+
+[![Crate](https://img.shields.io/crates/v/typed-io.svg)](https://crates.io/crates/typed-io)
+[![API](https://docs.rs/typed-io/badge.svg)](https://docs.rs/typed-io)
+
 Typed I/O extends and types `std::io` to make it easier to use.
 
 `typed_io` contains a number of common things you’ll need when doing input and output. The most core part of this module is the TypedRead and TypedWrite traits, which provide the most general interface for reading and writing input and output with type that easy to handle.
@@ -69,3 +73,8 @@ writer.write_le(1_u16).unwrap();
 writer.write_be(2_u16).unwrap();
 assert_eq!(writer, [1, 0, 0, 2]);
 ```
+
+## To Do
+- [ ] Write traits
+- [ ] Add provided methods
+- [ ] Methods naming
